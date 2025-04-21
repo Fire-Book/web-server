@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function Home() {
-  const message = process.env["MESSAGE"] || "Hello!";
+  const message = "App Hosting for Firebook";///process.env["MESSAGE"] || "Hello!";
   return (
     <main className="content">
       <h1 className="heading">Next.js on Firebase App Hosting</h1>
