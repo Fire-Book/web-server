@@ -14,5 +14,23 @@
         "npm --prefix \"$RESOURCE_DIR\" run lint"
       ]
     }
-  ]
+  ],
+  "hosting": {
+    "public": "functions", // 정적 파일 위치 
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/github",
+        "function": "getGitHubData"
+      },
+      {
+        "source": "/**",
+        "function": "router"
+      }
+    ]
+  }
 }
