@@ -12,7 +12,7 @@ coverage/
 out/
 
 # production
-build/
+#build/
 
 # 기타
 .DS_Store
